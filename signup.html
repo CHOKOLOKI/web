@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Signup Page</title>
+    </head>
+    <body>
+        <style type="text/css">
+             @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+             *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Poppins', sans-serif;
+            }
+
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                background: url(hehe.jpg);
+            }
+
+            .box{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                background-color: linear-gradient(rgba(255,192,203), rgba(255,192,203));
+                height: 53%;
+                width: 40%;
+                padding: 50px 30px;
+                border-radius: 10px;
+                box-shadow: 20px 30px 1000px pink;
+            }
+
+            .box .forms{
+                margin: 10px;
+                padding-left: 10px;
+            }
+
+            .forms a{
+                padding-top: 10px;
+                padding-bottom: 0;
+                margin-right: 30%;
+                margin-left: 30%;
+                border: none;
+            }
+
+            .inputBox{
+                position: relative;
+                width: 300px;
+                margin-top: 30px;
+            }
+                
+            .inputBox input{
+                position: relative;
+                width: 150%;
+                padding: 9px 20px 10px;
+                margin-left: 100px;
+                background: black;
+                border-radius: 30px;
+                color: pink;
+                font-size: 1em;
+                letter-spacing: 0.2em;
+            }
+
+            .links{
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .links a{
+                margin: 5px 0px;
+                padding-top: 10px;
+                font-size: 1em;
+                color: #8f8f8f;
+                text-decoration: none;
+            }
+
+            .links a:hover,
+            .links a:nth-child(2){
+                color: pink;
+            }
+            
+            input[type="submit"]{
+                border: none;
+                outline: none;
+                background: pink;
+                margin-left: 37.5%;
+                padding: 11px 25px;
+                width: 25%;
+                margin-top: 0;
+                border-radius: 15px;
+                font-weight: 700;
+                cursor: pointer;
+            }
+
+            input[type="submit"]:hover{
+                color: pink;
+                background: transparent;
+                padding: 10px 25px;
+                width: 25%;
+                margin-top: 0;
+                border-radius: 5px;
+                font-weight: 700;
+                cursor: pointer;
+                transition: 0.3s;
+            }        
+
+            
+        </style>
+            <div class="box">
+                <div class="forms">
+                    <a href="index.html"><img style="display: inline;" src="logo.png" width="250" height="53"></a>
+                    <div class="inputBox">
+                        <input type="text" required="required" placeholder="Username">
+                    </div>
+                    <div class="inputBox">
+                        <input type="email" required="email" placeholder="Email">
+                    </div>
+                    <div class="inputBox">
+                        <input type="password" required="password" placeholder="Password">
+                </div>
+                <div class="links">
+                    <a href="index.html">Back to Home</a>
+                    <a href="login.html">Log in</a>
+                </div>
+                <input type="submit" value="Sign in">
+            </div>
+           
+    </body>
+</html>

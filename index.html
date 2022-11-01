@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device, initial-scale=1.0">
+  <title>Blink Portal</title>
+</head>
+
+<body>
+  <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    section {
+      position: relative;
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      background: url(blackpink.png)no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    header {
+      position: relative;
+      top: 0;
+      width: 100%;
+      padding: 30px 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+
+
+    header .navigation a {
+      color: #000;
+      background: pink;
+      text-decoration: none;
+      font-weight: 500;
+      letter-spacing: 1px;
+      padding: 2px 15px;
+      border-radius: 20px;
+      transition: 0.5s;
+      transition-property: background;
+    }
+
+    header .navigation a:not(:last-child) {
+      margin-right: 30px;
+    }
+
+    header .navigation a:hover {
+      color: pink;
+      background: black;
+    }
+
+    .content {
+      max-width: 650px;
+      margin: 60px 100px;
+
+    }
+
+    .content .info h2 {
+      color: pink;
+      font-size: 70px;
+      text-transform: uppercase;
+      font-weight: 800;
+      letter-spacing: 0px;
+      line-height: 60px;
+      margin-bottom: 30px;
+      letter-spacing: 50px;
+    }
+
+    .content .info h2 span {
+      color: pink;
+      background: black;
+      padding-left: 10px;
+      padding-right: 10px;
+      border-radius: 20px;
+      font-size: 50px;
+      font-weight: 600;
+      margin-left: 30px;
+      letter-spacing: 2px;
+    }
+
+    .content .info p {
+      font-size: 15px;
+      margin: 10px;
+      margin-bottom: 20px;
+      padding: 40px;
+      border-radius: 30px;
+      letter-spacing: 2px;
+      font-style: italic;
+      color: black;
+      background-color: pink;
+    }
+
+    .content .info p:hover {
+      font-size: 15px;
+      margin: 10px;
+      margin-bottom: 20px;
+      padding: 40px;
+      border-radius: 30px;
+      letter-spacing: 2px;
+      font-style: italic;
+      color: pink;
+      background-color: black;
+      transition: 0.2s;
+    }
+
+    .content .info a {
+      text-transform: uppercase;
+      color: black;
+      background: transparent;
+      text-decoration: none;
+      margin-left: 13px;
+      font-weight: 1000;
+      padding: 10px 20px;
+      border-radius: 5px;
+      margin-top: 20px;
+      transition: 0.5s;
+      transition-property: background;
+    }
+
+
+    .content .info a:hover {
+      color: pink;
+      background: black;
+    }
+
+    .side_image {
+      position: fixed;
+      top: 170px;
+      left: 50%;
+      padding-bottom: 0;
+      outline: #000;
+    }
+
+    .side_image img {
+      padding: 50px;
+      border: 0;
+      margin: 0;
+    }
+
+    .side_image img:hover {
+      padding: 10px;
+      border: 0;
+      margin: 0;
+      transition: 0.5s;
+    }
+  </style>
+
+  <section>
+    <header>
+      <a href="index.html"><img style="display: inline;" src="logo.png" width="170" height="40"></a>
+      <div class="navigation">
+        <a href="#">HOME</a>
+        <a href="#">VIDEOS</a>
+        <a href="#">PORTFOLIO</a>
+        <a href="#">BLOG</a>
+        <a href="#">CONTACT US</a>
+        <a href="login.html">LOG IN</a>
+        <a href="signup.html">SIGN UP</a>
+      </div>
+    </header>
+    <div class="content">
+      <div class="info">
+        <h2>Welcome <br> <span>Feel Free to Explore!</span> </h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore nobis natus eius eligendi velit quas, nulla
+          corporis aliquam voluptas ex. Nihil natus impedit illum maxime neque officia minima sapiente obcaecati.
+        </p>
+        <a href="#" class="info-btn">More info</a>
+      </div>
+    </div>
+    <div class="media-icons">
+      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instgaram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+    <br><br><br><br><br>
+    </div>
+    <div class="side_image">
+      <a href="https://www.youtube.com/c/BLACKPINKOFFICIAL"><img src="side.jpg" alt="blink" width="80%"></a>
+    </div>
+  </section>
+
+</body>
+
+</html>
